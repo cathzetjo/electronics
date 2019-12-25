@@ -64,42 +64,42 @@ body {
     -moz-animation-fill-mode: forwards;
 }
 .body_slides li:nth-child(1){
-    background-image: url(../assets/images/electronics.jpg);
+    background-image: url(../assets/img/electronics.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
 .body_slides li:nth-child(2){
     -webkit-animation-delay: 8.0s;
     -moz-animation-delay: 8.0s;
-    background-image: url(../assets/images/pc.jpg);
+    background-image: url(../assets/img/pc.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
 .body_slides li:nth-child(3){
     -webkit-animation-delay: 16.0s;
     -moz-animation-delay: 16.0s;
-    background-image: url(../assets/images/kitchen.jpg);
+    background-image: url(../assets/img/kitchen.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
 .body_slides li:nth-child(4){
     -webkit-animation-delay: 24.0s;
     -moz-animation-delay: 24.0s;
-    background-image: url(../assets/images/repair.jpg);
+    background-image: url(../assets/img/repair.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
 .body_slides li:nth-child(5){
     -webkit-animation-delay: 32.0s;
     -moz-animation-delay: 32.0s;
-    background-image: url(../assets/images/garden.jpg);
+    background-image: url(../assets/img/garden.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
 .body_slides li:nth-child(6){
     -webkit-animation-delay: 40.0s;
     -moz-animation-delay: 40.0s;
-    background-image: url(../assets/images/avto-moto.jpg);
+    background-image: url(../assets/img/avto-moto.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
@@ -116,4 +116,145 @@ body {
     21% {opacity:1;}
     32% {opacity:0;}
     100% {opacity:0;}
+}
+
+/*content*/
+
+.container {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    height: 25%;
+    font-size: 16px;
+    line-height: 23px;
+    font-family: Rubik, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+footer {
+    display: flex;
+    height: 25%;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Rubik, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+main {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-first-row, .main-second-row {
+    display: flex;
+    flex-grow: 1;
+    height: 25%;
+    width: 100%;
+    font-size: 23px;
+    line-height: 34px;
+    font-family: Rubik, serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+header > div,
+header > nav,
+footer > div,
+.main-first-row > div,
+.main-second-row > div {
+    width: 33.3333%;
+    border: rgba(131, 125, 134, 0.4) solid 1px;
+}
+
+.main-first-row > div,
+.main-second-row > div {
+    padding-left: 4%;
+    display: flex;
+}
+
+.main-first-row > div > p,
+.main-second-row > div > p {
+    align-self: center;
+}
+
+/*google logo, search*/
+
+.fa-google {
+    font-size: 35px;
+    padding-left: 10%;
+    padding-top: 8%;
+}
+
+.fa-search {
+    font-size: 24px;
+    margin-top: 5%;
+}
+
+.fa-bars {
+    font-size: 22px;
+    background-color: transparent;
+    padding: 9px;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: 500;
+}
+
+.fa-bars:hover {
+  background-color: #F44242;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2.3%;
+    font-family: Rubik, serif;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.top-menu a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.menu-search {
+    text-align: end;
+}
+
+footer {
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+footer > div  {
+    display: flex;
+}
+
+footer > div > p {
+    align-self: flex-end;
+    margin-bottom: 5%;
+}
+
+.footer-left p {
+    margin-left: 9%;
+}
+
+.footer-right p {
+    margin-right: 2%;
+}
+
+footer .footer-right {
+    justify-content: flex-end;
 }
