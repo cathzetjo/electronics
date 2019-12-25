@@ -32,7 +32,7 @@ body {
     left:0px;}
 .body_slides:after {
     content: '';
-    background: transparent url(../assets/images/pattern.png) repeat top left;}
+    background: transparent url(../assets/img/pattern.png) repeat top left;}
 
 
 .body_slides li{
@@ -178,18 +178,24 @@ footer > div,
 .main-first-row > div,
 .main-second-row > div {
     padding-left: 4%;
-    display: flex;
 }
 
-.main-first-row > div > p,
-.main-second-row > div > p {
-    align-self: center;
+.electronics,
+.pc,
+.kitchen,
+.repair,
+.garden,
+.avto-moto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 /*google logo, search*/
 
 .fa-google {
-    font-size: 35px;
+    font-size: 55px;
     padding-left: 10%;
     padding-top: 8%;
 }
@@ -257,4 +263,82 @@ footer > div > p {
 
 footer .footer-right {
     justify-content: flex-end;
+}
+
+
+/*hover*/
+.main-invisible {
+    display: none;
+}
+
+.main-visible:hover p {
+    align-self: start;
+}
+
+.electronics:hover > .main-visible,
+.pc:hover > .main-visible,
+.kitchen:hover > .main-visible,
+.repair:hover > .main-visible,
+.garden:hover > .main-visible {
+ padding-bottom: 5%;
+}
+
+
+.electronics:hover > .main-invisible,
+.pc:hover > .main-invisible,
+.kitchen:hover > .main-invisible,
+.repair:hover > .main-invisible,
+.garden:hover > .main-invisible {
+    display:block ;
+    font-size: 12px;
+}
+
+.main-first-row > div,
+.main-second-row > div{
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 90%;
+    background-size: 20%;
+}
+
+.main-first-row> div:nth-child(odd):hover,
+.main-second-row> div:nth-child(even):hover {
+    background-color: #4285F4;
+}
+
+.main-first-row> div:nth-child(even):hover,
+.main-second-row> div:nth-child(odd):hover {
+    background-color: #F44242;
+}
+
+.electronics:hover {
+    background-image: url(../assets/svg/electronic.svg);
+}
+.pc:hover {
+    background-image: url(../assets/svg/pc.svg);
+}
+
+.kitchen:hover {
+    background-image: url(../assets/svg/kitchen.svg);
+}
+.repair:hover {
+    background-image: url(../assets/svg/repair.svg);
+}
+
+.garden:hover {
+    background-image: url(../assets/svg/garden.svg);
+}
+
+.avto-moto:hover {
+    background-image: url(../assets/svg/avto-moto.svg);
+
+}
+
+main a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
