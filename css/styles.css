@@ -12,7 +12,6 @@ body {
     top:0px;
     left:0px;
     background-color: #555555;
-
 }
 
 /*slides*/
@@ -215,9 +214,6 @@ footer > div,
     font-weight: 500;
 }
 
-.fa-bars:hover {
-  background-color: #F44242;
-}
 
 .top-menu {
     display: flex;
@@ -341,4 +337,10 @@ main a {
 
 main a:hover {
     text-decoration: underline;
+}
+
+/*menu-list*/
+
+.fa-bars:hover {
+    background-color: #F44242;
 }
