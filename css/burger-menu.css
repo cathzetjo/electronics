@@ -34,9 +34,9 @@
     transition: all 300ms ease;
 }
 .menu-button.opened span {
+    margin-top: .5%;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    top: 7px;
     background: black;
     z-index: 20;
 }
@@ -56,7 +56,7 @@
     flex-direction: column;
     width: 33.333%;
     height: 100vh;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.96);
     position: absolute;
     box-shadow: 0 0 2px 2px;
     z-index: 10;
@@ -70,6 +70,7 @@
 .burger-menu.opened {
     visibility: visible;
     opacity:1;
+    transition: .8s ease;
 }
 
 .menu-list{
