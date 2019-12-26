@@ -277,6 +277,7 @@ footer .footer-right {
 .repair:hover > .main-visible,
 .garden:hover > .main-visible {
  padding-bottom: 5%;
+    transition: .5s;
 }
 
 
@@ -300,11 +301,13 @@ footer .footer-right {
 .main-first-row> div:nth-child(odd):hover,
 .main-second-row> div:nth-child(even):hover {
     background-color: #4285F4;
+    transition: 1s;
 }
 
 .main-first-row> div:nth-child(even):hover,
 .main-second-row> div:nth-child(odd):hover {
     background-color: #F44242;
+    transition: 1s;
 }
 
 .electronics:hover {
