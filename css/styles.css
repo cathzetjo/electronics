@@ -204,17 +204,6 @@ footer > div,
     margin-top: 5%;
 }
 
-.fa-bars {
-    font-size: 22px;
-    background-color: transparent;
-    padding: 9px;
-    margin-right: 10%;
-    margin-left: 5%;
-    margin-top: 5%;
-    font-weight: 500;
-}
-
-
 .top-menu {
     display: flex;
     justify-content: space-around;
@@ -227,10 +216,6 @@ footer > div,
 .top-menu a {
     text-decoration: inherit;
     color: inherit;
-}
-
-.menu-search {
-    text-align: end;
 }
 
 footer {
@@ -340,10 +325,4 @@ main a {
 
 main a:hover {
     text-decoration: underline;
-}
-
-/*menu-list*/
-
-.fa-bars:hover {
-    background-color: #F44242;
 }
