@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/burger-menu.css">
+    <link rel="stylesheet" href="css/search.css">
     <script src="https://kit.fontawesome.com/96b0e7b44b.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
@@ -23,7 +24,15 @@
         <a href="#">Контакты</a>
     </nav>
         <div class="menu-search">
-            <i class="fas fa-search"></i>
+            <div class="search-button">
+           <i class="fas fa-search"></i>
+            </div>
+            <div class="search-page">
+                <input class="search-field" id="input" type="text" placeholder="Найти"/>
+                <button class="search-send" onclick="document.getElementById('input').value = ''">
+                    <img src="./assets/svg/search.svg" class="search-button-img" alt="Search">Найти
+                </button>
+            </div>
             <div class="menu-button">
                 <span></span>
             </div>
@@ -88,5 +97,6 @@
 </ul>
 </div>
 <script type="text/javascript" src="js/burger.js"></script>
+<script type="text/javascript" src="js/search.js"></script>
 </body>
 </html>
