@@ -190,11 +190,8 @@ footer > div,
     justify-content: center;
 }
 
-
-/*google logo, search*/
-
-.fa-google {
-    font-size: 55px;
+.logo img {
+    width: 10%;
     padding-left: 10%;
     padding-top: 8%;
 }
