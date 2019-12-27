@@ -185,7 +185,7 @@ footer > div,
     justify-content: center;
 }
 
-.logo img {
+.logo object {
     width: 10%;
     padding-left: 10%;
     padding-top: 8%;

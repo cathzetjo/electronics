@@ -126,9 +126,9 @@
         display: none;
     }
 
-    .logo img {
-        width: 20vw;
-        padding: 10% 0 15% 40%;
+    .logo object {
+        width: 15vw;
+        padding: 20% 0 15% 43%;
     }
 
     header {
