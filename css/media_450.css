@@ -1,0 +1,123 @@
+@media only screen and (max-width: 450px) {
+
+    html {
+        height: unset;
+        min-height: unset;
+    }
+    body {
+        height: unset;
+        min-height: unset;
+        margin:unset;
+        padding:unset;
+        position: unset;
+        width:unset;
+        top:unset;
+        left:unset;
+    }
+
+    .body_slides,
+    .body_slides:after
+    {
+        height: unset;
+    }
+
+
+    header, main, footer, .main-first-row, .main-second-row {
+        height: unset;
+        width: unset;
+    }
+
+    .main-first-row, .main-second-row {
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    header > div,
+    header > nav,
+    footer > div,
+    .main-first-row > div,
+    .main-second-row > div {
+        width: unset;
+        border: unset;
+    }
+
+    .main-first-row> div:nth-child(odd),
+    .main-second-row> div:nth-child(even) {
+        background-color: #4285F4;
+    }
+
+    .main-first-row> div:nth-child(even),
+    .main-second-row> div:nth-child(odd) {
+        background-color: #F44242;
+    }
+
+
+    .main-invisible {
+        display: unset;
+        font-size: 14px;
+    }
+
+    .main-visible:hover p {
+        align-self: unset;
+    }
+
+    .electronics:hover > .main-invisible,
+    .pc:hover > .main-invisible,
+    .kitchen:hover > .main-invisible,
+    .repair:hover > .main-invisible,
+    .garden:hover > .main-invisible {
+        font-size: 14px;
+    }
+
+    .electronics {
+        background-image: url(../assets/svg/electronic.svg);
+    }
+    .pc {
+        background-image: url(../assets/svg/pc.svg);
+    }
+
+    .kitchen {
+        background-image: url(../assets/svg/kitchen.svg);
+    }
+    .repair{
+        background-image: url(../assets/svg/repair.svg);
+    }
+
+    .garden{
+        background-image: url(../assets/svg/garden.svg);
+    }
+
+    .avto-moto{
+        background-image: url(../assets/svg/avto-moto.svg);
+
+    }
+
+    .main-first-row > div,
+    .main-second-row > div{
+    background-position-y: 15%;
+    background-position-x: 50%;
+    background-size: 20%;
+        text-align: center;
+        margin: 0;
+        padding: 0 20% 8%;
+    }
+    .main-visible {
+        padding-top: 50%;
+        padding-bottom: 5%;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .electronics, .pc, .kitchen, .repair, .garden, .avto-moto  {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main-invisible:hover {
+        font-size: unset;
+        padding: unset;
+        margin: unset;
+        transition: unset;
+    }
+}

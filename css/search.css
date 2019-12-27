@@ -52,14 +52,15 @@ opacity: 0;
     color: #34363B;
     flex-grow: 1;
 }
-input::placeholder {
+input::placeholder,
+input::-moz-placeholder {
     font-family: Rubik, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 21px;
     color: #34363B;
 }
+
 .search-send {
     width: 100%;
     height: 10%;
