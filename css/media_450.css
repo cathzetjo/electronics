@@ -263,4 +263,8 @@
         background-size: 65%;
         position: fixed;
     }
+
+    .body_slides {
+        height: 33.333%;
+    }
 }
