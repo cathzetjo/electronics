@@ -251,4 +251,15 @@
         text-transform: capitalize;
     }
 
+    .search-page.opened,
+    .burger-menu.opened,
+    .menu-button.opened span {
+
+        position: fixed;
+    }
+
+    .search-button.opened {
+        background-size: 65%;
+        position: fixed;
+    }
 }
