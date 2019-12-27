@@ -117,14 +117,7 @@
 
     header .slides {
         width: 100%;
-        /*height: fit-content;*/
      }
-
-    /*.body_slides,*/
-    /*.body_slides:after*/
-    /*{*/
-        /*height: unset;*/
-    /*}*/
 
     .logo {
         order: 1;
