@@ -2,7 +2,7 @@
     cursor: pointer;
     position: absolute;
     margin-top: 2.5%;
-    right: 10%;
+    right: 8.5%;
 }
 .search-button.opened {
     z-index: 20;
@@ -13,7 +13,7 @@
     margin-top: 2.5%;
     right: 5%;
  }
-.search-button.opened i{
+.search-button.opened img {
 opacity: 0;
 }
 .search-page{

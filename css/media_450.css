@@ -149,10 +149,8 @@
         right: 8%;
     }
 
-    .fa-search {
-        font-size: 8vw;
-        line-height: unset;
-        margin-top: unset;
+    .search-button img {
+        width: 25px;
     }
 
     .search-page {
