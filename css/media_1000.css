@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1000px) {
+
+ .top-menu, .footer-left, .footer-right {
+       font-size: 2vw;
+   }
+
+    .main-first-row,
+    .main-second-row {
+        font-size: 2vw;
+    }
+
+    header, footer {
+        height: 10%;
+    }
+
+    main {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-first-row, .main-second-row {
+        height: 35%;
+    }
+
+    header > div {
+        width: 15%;
+        border-right: none;
+        border-left: none;
+    }
+
+    header > nav {
+        width: 70%;
+        border-right: none;
+        border-left: none;
+    }
+
+    .menu-button {
+        margin-top: 18%;
+        margin-right: 40%;
+    }
+
+    .logo img {
+        width: 5vw;
+        padding-top: 11%;
+    }
+    .fa-search {
+        font-size: 3vw;
+    }
+
+    .burger-menu .menu-list {
+        font-size: 2vw;
+    }
+}
