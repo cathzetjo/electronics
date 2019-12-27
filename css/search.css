@@ -83,9 +83,11 @@ input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s eas
 input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
 input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
-.search-button-img {
-    width: 1.5%;
-    margin-right: 1%;
+.search-send object {
+    width: 25px;
+    margin-right: 10px;
+    top: 5px;
+    position: relative;
 }
 
 .search-send::before{

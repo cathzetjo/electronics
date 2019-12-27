@@ -167,10 +167,6 @@
         font-size: 4vw;
          text-align: center;
     }
-    .search-button-img {
-        width: 4%;
-        margin-right: 2%;
-    }
 
     footer {
         flex-direction: column;
