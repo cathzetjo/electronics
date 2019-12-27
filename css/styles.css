@@ -16,6 +16,11 @@ body {
 
 /*slides*/
 
+header .slides {
+    width: 0px;
+    border-right: none;
+}
+
 .body_slides{
     list-style:none;
     margin:0;
@@ -331,4 +336,7 @@ main a:hover {
 
 .menu-search-img {
     width: 20%;
+}
+.footer-center {
+    opacity: 0;
 }
