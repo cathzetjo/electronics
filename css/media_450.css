@@ -238,6 +238,7 @@
 
     .footer-right p {
         margin-bottom: 7%;
+        margin-right: unset;
     }
 
     .footer-left,  .footer-right {
