@@ -14,20 +14,20 @@ header .slides {
     width: 0px;
     border-right: none;
 }
-
 .body_slides{
     list-style:none;
     margin:0;
     padding:0;
     z-index:-2;
-    background:#000;}
+    background:#000;
+}
 .body_slides {
     position: fixed;
     width:100%;
     height:100%;
     top:0px;
-    left:0px;}
-
+    left:0px;
+}
 .body_slides li{
     width:100%;
     height:100%;
@@ -117,7 +117,6 @@ header .slides {
     height: 100vh;
     min-height: 600px;
 }
-
 header {
     display: flex;
     height: 25%;
@@ -128,7 +127,6 @@ header {
     font-weight: normal;
     color: #FFFFFF;
 }
-
 footer {
     display: flex;
     height: 25%;
@@ -139,13 +137,11 @@ footer {
     font-weight: normal;
     color: #FFFFFF;
 }
-
 main {
     height: 50%;
     display: flex;
     flex-direction: column;
 }
-
 .main-first-row, .main-second-row {
     display: flex;
     flex-grow: 1;
@@ -159,7 +155,6 @@ main {
     color: #FFFFFF;
     text-transform: uppercase;
 }
-
 header > div,
 header > nav,
 footer > div,
@@ -168,12 +163,10 @@ footer > div,
     width: 33.3333%;
     border: rgba(131, 125, 134, 0.4) solid 1px;
 }
-
 .main-first-row > div,
 .main-second-row > div {
     padding-left: 4%;
 }
-
 .electronics,
 .pc,
 .kitchen,
@@ -184,17 +177,14 @@ footer > div,
     flex-direction: column;
     justify-content: center;
 }
-
 .logo object {
     width: 10%;
     padding-left: 10%;
     padding-top: 8%;
 }
-
 .search-button img{
     width: 30px;
 }
-
 .top-menu {
     display: flex;
     justify-content: space-around;
@@ -203,40 +193,32 @@ footer > div,
     font-size: 14px;
     line-height: 23px;
 }
-
 .top-menu a {
     text-decoration: inherit;
     color: inherit;
 }
-
 footer {
     text-transform: capitalize;
     font-size: 14px;
     line-height: 17px;
     color: rgba(255, 255, 255, 0.4);
 }
-
 footer > div  {
     display: flex;
 }
-
 footer > div > p {
     align-self: flex-end;
     margin-bottom: 5%;
 }
-
 .footer-left p {
     margin-left: 9%;
 }
-
 .footer-right p {
     margin-right: 13%;
 }
-
 footer .footer-right {
     justify-content: flex-end;
 }
-
 
 /*hover*/
 .main-invisible {
@@ -246,7 +228,6 @@ footer .footer-right {
 .main-visible:hover p {
     align-self: start;
 }
-
 .electronics:hover > .main-visible,
 .pc:hover > .main-visible,
 .kitchen:hover > .main-visible,
@@ -255,8 +236,6 @@ footer .footer-right {
  padding-bottom: 5%;
     transition: .5s;
 }
-
-
 .electronics:hover > .main-invisible,
 .pc:hover > .main-invisible,
 .kitchen:hover > .main-invisible,
@@ -265,7 +244,6 @@ footer .footer-right {
     display:block ;
     font-size: 12px;
 }
-
 .main-first-row > div,
 .main-second-row > div{
     background-repeat: no-repeat;
@@ -273,19 +251,16 @@ footer .footer-right {
     background-position-x: 90%;
     background-size: 20%;
 }
-
 .main-first-row> div:nth-child(odd):hover,
 .main-second-row> div:nth-child(even):hover {
     background-color: #4285F4;
     transition: 1s;
 }
-
 .main-first-row> div:nth-child(even):hover,
 .main-second-row> div:nth-child(odd):hover {
     background-color: #F44242;
     transition: 1s;
 }
-
 .electronics:hover {
     background-image: url(../assets/svg/electronic.svg);
 }
@@ -308,12 +283,10 @@ footer .footer-right {
     background-image: url(../assets/svg/avto-moto.svg);
 
 }
-
 main a {
     text-decoration: inherit;
     color: inherit;
 }
-
 main a:hover {
     text-decoration: underline;
 }
@@ -322,7 +295,6 @@ main a:hover {
     display: flex;
     justify-content: flex-end;
 }
-
 .menu-search-img {
     width: 20%;
 }

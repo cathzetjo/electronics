@@ -1,9 +1,5 @@
 @media only screen and (max-width: 450px) {
 
-    html {
-        height: unset;
-        min-height: unset;
-    }
     body {
         height: unset;
         min-height: unset;
@@ -11,21 +7,15 @@
         padding:unset;
         position: unset;
         width:unset;
-        top:unset;
-        left:unset;
     }
-
-
     header, main, .main-first-row, .main-second-row {
         height: unset;
         width: unset;
     }
-
     .main-first-row, .main-second-row {
         flex-direction: column;
         font-size: 18px;
     }
-
     header > div,
     header > nav,
     footer > div,
@@ -34,27 +24,14 @@
         width: unset;
         border: unset;
     }
-
     .main-first-row> div:nth-child(odd),
     .main-second-row> div:nth-child(even) {
         background-color: #4285F4;
     }
-
     .main-first-row> div:nth-child(even),
     .main-second-row> div:nth-child(odd) {
         background-color: #F44242;
     }
-
-
-    .main-invisible {
-        display: unset;
-        font-size: 14px;
-    }
-
-    .main-visible:hover p {
-        align-self: unset;
-    }
-
     .electronics:hover > .main-invisible,
     .pc:hover > .main-invisible,
     .kitchen:hover > .main-invisible,
@@ -62,7 +39,6 @@
     .garden:hover > .main-invisible {
         font-size: 14px;
     }
-
     .electronics {
         background-image: url(../assets/svg/electronic.svg);
     }
@@ -76,16 +52,12 @@
     .repair{
         background-image: url(../assets/svg/repair.svg);
     }
-
     .garden{
         background-image: url(../assets/svg/garden.svg);
     }
-
     .avto-moto{
         background-image: url(../assets/svg/avto-moto.svg);
-
     }
-
     .main-first-row > div,
     .main-second-row > div{
     background-position-y: 15%;
@@ -100,41 +72,39 @@
         padding-bottom: 5%;
         flex-grow: 1;
         width: 100%;
+        display: unset;
+        font-size: 14px;
     }
-
-    .electronics, .pc, .kitchen, .repair, .garden, .avto-moto  {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .main-visible:hover p {
+        align-self: unset;
     }
-
     .main-invisible:hover {
         font-size: unset;
         padding: unset;
         margin: unset;
         transition: unset;
     }
-
+    .electronics, .pc, .kitchen, .repair, .garden, .avto-moto  {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     header .slides {
         width: 100%;
      }
-
     .logo {
         order: 1;
     }
     .top-menu {
         display: none;
     }
-
     .logo object {
         width: 15vw;
         padding: 20% 0 15% 43%;
     }
-
     header {
         flex-direction: column;
     }
-
     .menu-search {
         justify-content: unset;
         align-items: flex-end;
@@ -143,31 +113,25 @@
         margin-left: 8%;
         margin-top: 8%;
     }
-
     .search-button {
         top: 3%;
         right: 8%;
     }
-
     .search-button img {
         width: 25px;
     }
-
     .search-page {
         bottom: 0;
         right: 0;
     }
-
     .burger-menu.opened {
         top: 0;
         width: 100%;
     }
-
     .burger-menu .menu-list {
         font-size: 4vw;
          text-align: center;
     }
-
     footer {
         flex-direction: column;
         height: 100px;
@@ -198,13 +162,11 @@
     .footer-right {
         order: 2;
     }
-
     footer .footer-right,
     footer .footer-left,
     footer .footer-center {
         justify-content: center;
     }
-
     footer .footer-right p,
     footer .footer-left p,
     footer .footer-center p {
@@ -215,49 +177,39 @@
         text-align: center;
         border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     }
-
     .footer-center a {
         text-decoration: inherit;
         color: inherit;
     }
-
     .footer-center p:first-child {
         margin-top: 50%;
         margin-bottom: 25%;
         font-size: 25px;
     }
-
     .footer-center p:last-child {
         margin-bottom: 40%;
     }
-
     .footer-left p {
         margin-top: 7%;
         margin-bottom: 2%;
     }
-
     .footer-right p {
         margin-bottom: 7%;
         margin-right: unset;
     }
-
     .footer-left,  .footer-right {
         text-transform: capitalize;
     }
-
     .search-page.opened,
     .burger-menu.opened,
     .menu-button.opened span {
-
         position: fixed;
     }
-
     .search-button.opened {
         background-size: 65%;
         position: fixed;
     }
-
     .body_slides {
-        height: 33.333%;
+        height: 35%;
     }
 }
