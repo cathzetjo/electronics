@@ -32,6 +32,16 @@
     .main-second-row> div:nth-child(odd) {
         background-color: #F44242;
     }
+
+    .main-invisible {
+        display: unset;
+        font-size: 14px;
+    }
+
+    .main-visible:hover p {
+        align-self: unset;
+    }
+
     .electronics:hover > .main-invisible,
     .pc:hover > .main-invisible,
     .kitchen:hover > .main-invisible,
@@ -72,11 +82,6 @@
         padding-bottom: 5%;
         flex-grow: 1;
         width: 100%;
-        display: unset;
-        font-size: 14px;
-    }
-    .main-visible:hover p {
-        align-self: unset;
     }
     .main-invisible:hover {
         font-size: unset;
