@@ -123,6 +123,7 @@
     .search-page {
         bottom: 0;
         right: 0;
+        padding-top: 1px;
     }
     .burger-menu.opened {
         top: 0;
@@ -134,7 +135,7 @@
     }
     footer {
         flex-direction: column;
-        height: 100px;
+        height: unset;
     }
     .footer-left, .footer-right {
         font-family: Rubik, serif;
@@ -158,9 +159,11 @@
     }
     .footer-left {
         order: 1;
+        border-bottom: 3px solid #F5F6F8;
     }
     .footer-right {
         order: 2;
+        border-top: 3px solid #F5F6F8;
     }
     footer .footer-right,
     footer .footer-left,
