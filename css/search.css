@@ -1,0 +1,101 @@
+.search-button {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 2.5%;
+    right: 8.5%;
+}
+.search-button.opened {
+    z-index: 20;
+    background-image: url("../assets/svg/cross.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 2%;
+    margin-top: 2.5%;
+    right: 5%;
+ }
+.search-button.opened img {
+opacity: 0;
+}
+.search-page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.96);
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    opacity:0;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    align-items: center;
+    justify-content: center;
+}
+.search-page.opened {
+    visibility: visible;
+    opacity:1;
+    transition: .8s ease;
+    z-index: 10;
+}
+.search-field {
+    border: none;
+    width: 50%;
+    height: 3%;
+    padding-left: .2%;
+    background-color: transparent;
+    outline:none;
+    font-family: Rubik, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #34363B;
+    flex-grow: 1;
+}
+input::placeholder,
+input::-moz-placeholder {
+    font-family: Rubik, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #34363B;
+}
+
+.search-send {
+    width: 100%;
+    height: 10%;
+    background-color: #F44242;
+    outline:none;
+    font-family: Rubik, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.search-send object {
+    width: 25px;
+    margin-right: 10px;
+    top: 5px;
+    position: relative;
+}
+
+.search-send::before{
+    content: "";
+    position: absolute;
+    right: 25%;
+    width: 50%;
+    height: 1px;
+    background-color: rgba(52, 54, 59, 0.2);
+    bottom: 53%;
+}

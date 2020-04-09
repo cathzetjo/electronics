@@ -2,16 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Front-end Test Zhadko</title>
+    <title>Main page with catalogue</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/burger-menu.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/media_1000.css">
+    <link rel="stylesheet" href="css/media_450.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=450, initial-scale=1">
 </head>
 <body>
-<ul class="body_slides">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+<div class="container">
+    <header>
+        <div class="slides">
+            <ul class="body_slides">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="logo"><object type="image/svg+xml" data="./assets/svg/google.svg"></object></div>
+        <nav class="top-menu">
+        <a href="#">Главная</a>
+        <a href="#">Каталог</a>
+        <a href="#">Проекты</a>
+        <a href="#">О компании</a>
+        <a href="#">Контакты</a>
+    </nav>
+        <div class="menu-search">
+            <div class="search-button">
+                <img src="./assets/img/search.png" alt="Найти">
+            </div>
+            <div class="search-page">
+                <input class="search-field" id="input" type="text" placeholder="Найти"/>
+                <button class="search-send" onclick="document.getElementById('input').value = ''">
+                  <object class="search-button-img" type="image/svg+xml" data="./assets/svg/search.svg"></object>Найти
+                </button>
+            </div>
+            <div class="menu-button">
+                <span></span>
+            </div>
+            <nav class="burger-menu">
+                <ul class="menu-list">
+                    <li><a href="#">главная</a></li>
+                    <li><a href="#">каталог</a></li>
+                    <li><a href="#">проекты</a></li>
+                    <li><a href="#">о компании</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-first-row">
+            <div class="electronics">
+                <p class="main-visible">электроника</p>
+                <p class="main-invisible"><a href="#">интеграл</a></p>
+                <p class="main-invisible"><a href="#">электрод</a></p>
+            </div>
+            <div class="pc">
+                <p class="main-visible">компьютеры и сети</p>
+                <p class="main-invisible"><a href="#">acer</a></p>
+                <p class="main-invisible"><a href="#">hp</a></p>
+            </div>
+            <div class="kitchen">
+                <p class="main-visible">бытовая техника</p>
+                <p class="main-invisible"><a href="#">samsung</a></p>
+            </div>
+        </div>
+        <div class="main-second-row">
+            <div class="repair">
+                <p class="main-visible">стройка и ремонт</p>
+                <p class="main-invisible"><a href="#">акрил</a></p>
+            </div>
+            <div class="garden">
+                <p class="main-visible">дом и сад</p>
+                <p class="main-invisible"><a href="#">алмаз</a></p>
+                <p class="main-invisible"><a href="#">bosh</a></p>
+            </div>
+            <div class="avto-moto"><p class="main-visible">авто и мото</p></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left"><p>каталог &#169;</p></div>
+        <div class="footer-center"><a href="#"><p>&and;</p><p>Наверх</p></a></div>
+        <div class="footer-right"><p>Katerina Zhadko &reg;</p></div>
+    </footer>
+</div>
+<script src="index.js"></script>
 </body>
 </html>

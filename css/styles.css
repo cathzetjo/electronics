@@ -1,40 +1,33 @@
-tml {
-    height: 100%;
-    min-height: 100%
-}
 body {
     height: 100%;
-    min-height: 100%;
+    min-height: 600px;
     margin:0;
     padding:0;
-    position: fixed;
     width:100%;
-    top:0px;
-    left:0px;
     background-color: #555555;
-
+    position: fixed;
 }
 
 /*slides*/
 
+header .slides {
+    width: 0px;
+    border-right: none;
+}
 .body_slides{
     list-style:none;
     margin:0;
     padding:0;
     z-index:-2;
-    background:#000;}
-.body_slides,
-.body_slides:after{
+    background:#000;
+}
+.body_slides {
     position: fixed;
     width:100%;
     height:100%;
     top:0px;
-    left:0px;}
-.body_slides:after {
-    content: '';
-    background: transparent url(../assets/images/pattern.png) repeat top left;}
-
-
+    left:0px;
+}
 .body_slides li{
     width:100%;
     height:100%;
@@ -64,42 +57,42 @@ body {
     -moz-animation-fill-mode: forwards;
 }
 .body_slides li:nth-child(1){
-    background-image: url(../assets/images/electronics.jpg);
+    background-image: url(../assets/img/electronics.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
 .body_slides li:nth-child(2){
     -webkit-animation-delay: 8.0s;
     -moz-animation-delay: 8.0s;
-    background-image: url(../assets/images/pc.jpg);
+    background-image: url(../assets/img/pc.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
 .body_slides li:nth-child(3){
     -webkit-animation-delay: 16.0s;
     -moz-animation-delay: 16.0s;
-    background-image: url(../assets/images/kitchen.jpg);
+    background-image: url(../assets/img/kitchen.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
 .body_slides li:nth-child(4){
     -webkit-animation-delay: 24.0s;
     -moz-animation-delay: 24.0s;
-    background-image: url(../assets/images/repair.jpg);
+    background-image: url(../assets/img/repair.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
 .body_slides li:nth-child(5){
     -webkit-animation-delay: 32.0s;
     -moz-animation-delay: 32.0s;
-    background-image: url(../assets/images/garden.jpg);
+    background-image: url(../assets/img/garden.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
 .body_slides li:nth-child(6){
     -webkit-animation-delay: 40.0s;
     -moz-animation-delay: 40.0s;
-    background-image: url(../assets/images/avto-moto.jpg);
+    background-image: url(../assets/img/avto-moto.jpg);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
 }
@@ -116,4 +109,195 @@ body {
     21% {opacity:1;}
     32% {opacity:0;}
     100% {opacity:0;}
+}
+
+/*content*/
+
+.container {
+    height: 100vh;
+    min-height: 600px;
+}
+header {
+    display: flex;
+    height: 25%;
+    font-size: 16px;
+    line-height: 23px;
+    font-family: Rubik, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+footer {
+    display: flex;
+    height: 25%;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Rubik, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+main {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.main-first-row, .main-second-row {
+    display: flex;
+    flex-grow: 1;
+    height: 25%;
+    width: 100%;
+    font-size: 23px;
+    line-height: 34px;
+    font-family: Rubik, serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+header > div,
+header > nav,
+footer > div,
+.main-first-row > div,
+.main-second-row > div {
+    width: 33.3333%;
+    border: rgba(131, 125, 134, 0.4) solid 1px;
+}
+.main-first-row > div,
+.main-second-row > div {
+    padding-left: 4%;
+}
+.electronics,
+.pc,
+.kitchen,
+.repair,
+.garden,
+.avto-moto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo object {
+    width: 10%;
+    padding-left: 10%;
+    padding-top: 8%;
+}
+.search-button img{
+    width: 30px;
+}
+.top-menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2.3%;
+    font-family: Rubik, serif;
+    font-size: 14px;
+    line-height: 23px;
+}
+.top-menu a {
+    text-decoration: inherit;
+    color: inherit;
+}
+footer {
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.4);
+}
+footer > div  {
+    display: flex;
+}
+footer > div > p {
+    align-self: flex-end;
+    margin-bottom: 5%;
+}
+.footer-left p {
+    margin-left: 9%;
+}
+.footer-right p {
+    margin-right: 13%;
+}
+footer .footer-right {
+    justify-content: flex-end;
+}
+
+/*hover*/
+.main-invisible {
+    display: none;
+}
+
+.main-visible:hover p {
+    align-self: start;
+}
+.electronics:hover > .main-visible,
+.pc:hover > .main-visible,
+.kitchen:hover > .main-visible,
+.repair:hover > .main-visible,
+.garden:hover > .main-visible {
+ padding-bottom: 5%;
+    transition: .5s;
+}
+.electronics:hover > .main-invisible,
+.pc:hover > .main-invisible,
+.kitchen:hover > .main-invisible,
+.repair:hover > .main-invisible,
+.garden:hover > .main-invisible {
+    display:block ;
+    font-size: 12px;
+}
+.main-first-row > div,
+.main-second-row > div{
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 90%;
+    background-size: 20%;
+}
+.main-first-row> div:nth-child(odd):hover,
+.main-second-row> div:nth-child(even):hover {
+    background-color: #4285F4;
+    transition: 1s;
+}
+.main-first-row> div:nth-child(even):hover,
+.main-second-row> div:nth-child(odd):hover {
+    background-color: #F44242;
+    transition: 1s;
+}
+.electronics:hover {
+    background-image: url(../assets/svg/electronic.svg);
+}
+.pc:hover {
+    background-image: url(../assets/svg/pc.svg);
+}
+
+.kitchen:hover {
+    background-image: url(../assets/svg/kitchen.svg);
+}
+.repair:hover {
+    background-image: url(../assets/svg/repair.svg);
+}
+
+.garden:hover {
+    background-image: url(../assets/svg/garden.svg);
+}
+
+.avto-moto:hover {
+    background-image: url(../assets/svg/avto-moto.svg);
+
+}
+main a {
+    text-decoration: inherit;
+    color: inherit;
+}
+main a:hover {
+    text-decoration: underline;
+}
+
+.menu-search {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-search-img {
+    width: 20%;
+}
+.footer-center {
+    opacity: 0;
 }
